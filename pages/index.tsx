@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { WorkWindow, WorkSample, ReviewCarousel } from '../components'
 
 const works = [
-  {title: 'Rhema Services', description:'A static page for a handyman company'},
-  {title: 'The Forge', description:'A Coffee business with a subscription package, review carousel, as well as personalized pages'},
-  {title: 'DSKMTS', description:'edited from the free dawn theme'}
+  {title: 'Rhema Services', description:'A static page for a handyman company', imgFile:'macbook.png'},
+  {title: 'The Forge', description:'A Coffee business with a subscription package, review carousel, as well as personalized pages', imgFile:'ipad.png'},
+  {title: 'DSKMTS', description:'edited from the free dawn theme', imgFile:'imac.png'}
 ];
 
 const Home: NextPage = () => {
