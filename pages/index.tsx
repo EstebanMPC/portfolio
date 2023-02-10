@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { WorkWindow, WorkSample, ReviewCarousel, Footer, Aboutme} from '../components'
+import { WorkWindow, WorkSample, Footer, Aboutme, Landing} from '../components'
+import { ReviewCarousel } from '../sections'
 
 const works = [
   {title: 'Rhema Services', description:'A Coffee business with a subscription package, review carousel, as well as personalized pages', imgFile:'macbook.png'},
@@ -11,11 +12,12 @@ const works = [
 
 const Home: NextPage = () => {
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <div className="container mx-auto px-5 mb-8">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Landing />
       <Aboutme />
       <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 align-middle flex  ">
         <div className="lg:col-span-8 col-span-1 m-auto mt-36">
@@ -23,8 +25,8 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div>
-        <WorkWindow />
         <ReviewCarousel />
+        <WorkWindow />
       </div>
       <Footer />  
 

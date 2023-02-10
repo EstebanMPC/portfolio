@@ -3,16 +3,16 @@ import { Layout } from '../components';
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import {Roboto} from '@next/font/google'
+import {Work_Sans} from '@next/font/google'
 
-const roboto= Roboto({
+const worksans= Work_Sans({
   subsets:['latin'],
-  weight: ['400', '700'],
+  weight: ['100','400', '700'],
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return(
-    <main className="{roboto.className}">
+    <main className="{worksans.className}">
       <Layout>
         <Component {...pageProps} />
       </Layout>
